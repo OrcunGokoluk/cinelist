@@ -6,9 +6,11 @@ function MainLayout() {
   return (
     <>
         <div className='container'>
-            <h1 className='title'>CineList</h1>
-            <Outlet/>
+            <header>
+                <h1 className='title'>CineList</h1>
+            </header>
         </div>
+        <Outlet/>
 
     </>
   )

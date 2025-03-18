@@ -15,7 +15,7 @@ function MovieCard( {image, overview, title, id , imdb}) {
             <section className='description'>
                 <p className='secondary-title'>{title}</p>
                 <p className='imdb'>imdb:{roundNumber(imdb,2)}</p>
-                <p className='overview'>{overview.slice(0,120)+"..."}</p>
+                {/* <p className='overview'>{overview.slice(0,120)+"..."}</p> */}
             </section>
     </Link>
     </>

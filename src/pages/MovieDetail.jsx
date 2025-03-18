@@ -25,15 +25,21 @@ const[video, setVideo] = useState({})
         })
 
     },[])
-
+    const styles = {
+        backgroundImage:  ` linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(${movie.backdrop_path
+            ?"https://image.tmdb.org/t/p/w500/"+ `${movie.backdrop_path}`:"../../public/placeholder.jpg"})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        filter: "sepia(1) hue-rotate(180deg) saturate(2)", /* Mavi renk tonu verir */
+    }
+console.log(styles.backgroundImage)
 
   return (
     <>
     <article className='movie-general-info'>
-       <div className='image-filter-container'>
-                <img className='movie-backdrop-image' src={ movie.backdrop_path
-            ?"https://image.tmdb.org/t/p/w500/"+ `${movie.backdrop_path}`:"../../public/placeholder.jpg"} />
-        </div>
+
+       <div className='image-filter-container' style={styles}></div>
+
         <section className='movie-detail-info'>
             <section className='movie-detail-poster-image-container'>
             <img className='movie-detail-poster-image' src={ movie.poster_path
@@ -42,7 +48,7 @@ const[video, setVideo] = useState({})
             <section className='movie-detail-body-container'>
                 <div className='movie-detail-title-container'>
                     <p className='movie-detail-title'>{movie.original_title}</p>
-                    <p className='no-thickness'>({ movie.release_date ? movie.release_date.slice(0,4): ""})</p>
+                    <p className='no-thickness release-date'>({ movie.release_date ? movie.release_date.slice(0,4): ""})</p>
                 </div>
                 <div className='movie-detail-overview'>
                     <p>Overview:</p>
@@ -52,6 +58,7 @@ const[video, setVideo] = useState({})
             </section>
 
         </section>
+
 
 
     </article>

@@ -1,6 +1,10 @@
 
-
+header{
+    width: 100%;
+    background-color: 051923;
+}
 .search-form{
+    margin-top: 5rem;
     display:flex;
     flex-direction: column;
     gap: 0.5rem;
@@ -31,37 +35,46 @@
     text-decoration: none;
     display: flex;
     flex-direction: column;
-    width: 30%;
+    border:1px solid #c1c1c1;
+    width: 20%;
     border-radius: 2rem;
     margin-bottom: 1rem;
-    background-color: #d3c0cd;
-    padding: 1rem;
+    padding: .5rem .5rem 0 .5rem;
+    max-height: 50rem;
+    min-height: 45rem;
+}
+.imdb{
+    font-size: 2rem;
 }
 
 .movie-card:hover{
     padding: 0;
 }
 .movie-card img{
-    border-radius: 2rem;
+    border-radius: 2rem 2rem 0 0;
 }
 
 .movie-card img:hover{
     border-radius: 2rem 2rem 0 0;
 }
 
+
 .movie-card .description{
-    padding: 2rem;
-    padding-top: 1rem;
-    color: #3d3a4b;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #051923;
+    padding: 1rem;
 }
 .movie-card-container{
     display: flex;
     flex-wrap: wrap;
     gap:2rem;
     align-content: center;
+    justify-content: center;
     width: 100%;
     margin-top: 5rem;
-    
     max-width: 1000px;
     padding:4rem;
     margin: 0 auto;
@@ -72,8 +85,9 @@
     position: relative;
     display: inline-block;
     width: 100%;
+    height: 75rem;
   }
-  
+  /*
   .image-filter-container::after {
     content: "";
     position: absolute;
@@ -81,8 +95,8 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(43, 24, 42, 0.685); /* Siyah transparan katman */
-  }
+    background-color: rgba(43, 24, 42, 0.685);} /* Siyah transparan katman */
+
 .page-buttons{
     width: 100%;
     display: flex;
@@ -113,6 +127,7 @@
     font-size: 10rem;
     width: 100%;
     margin-top: 2rem;
+    
 }
 .movie-backdrop-image{
     width: 100%;
@@ -140,6 +155,9 @@
     font-size: 4.5rem;
     font-weight: 600;
 }
+.release-date{
+    margin-right: 6rem;
+}
 .movie-detail-title-container{
     display: flex;
 }
@@ -149,6 +167,10 @@
 }
 .movie-detail-overview p {
     font-size: 2.5rem;
+    padding: 0 10rem 0 0;
+}
+.search-form label{
+    font-size: 2.5rem;
 }
 @media (min-width:786px){
     .search-form{
@@ -157,15 +179,6 @@
         justify-content: center;
         width: 100%;
         gap: 1rem;
-    }
-    .search-form label{
-        font-size: 2.5rem;
-    }
-    .search-form input{
-        min-width: 45rem;
-    }
-    .search-form button{
-        padding:1.5rem 3rem
     }
 }
 
@@ -180,5 +193,39 @@
     }
     .movie-detail-body-container{
         margin: 0 6rem;
+        color:black
+    }
+    .movie-detail-overview p {
+        font-size: 2.5rem;
+        padding: 0 3rem  3rem;
+    }
+    .movie-detail-title-container{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .movie-card{
+        width: 40%;
+        border-radius: 2rem;
+        padding: .5rem .5rem 0 .5rem;
+        min-height: 50rem;
+    }
+    .search-form{
+        margin:5rem 10rem
+    }
+    .search-form label{
+        font-size: 2.5rem;
+    }
+    .search-form input{
+        min-width: 45rem;
+        margin-top:1rem;
+    }
+    .search-form button{
+        padding:1.5rem 3rem;
+        margin-top:1rem;
+    }
+    .release-date{
+        margin-right: 0;
     }
 }
