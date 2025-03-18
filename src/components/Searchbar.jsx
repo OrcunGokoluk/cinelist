@@ -46,9 +46,9 @@ if(movieName){
         </form>
     <article className='movie-card-container'>
     {
-         moviedata ? moviedata.map( (data, index)=><MovieCard key={index} id={data.id} image={data.poster_path}
+         moviedata.length>0 ? moviedata.map( (data, index)=><MovieCard key={index} id={data.id} image={data.poster_path}
          overview={data.overview} title={data.title} imdb={data.
-          vote_average}/>):""    
+          vote_average}/>):<div className='placeholder-container'></div>    
         }
     </article>
 

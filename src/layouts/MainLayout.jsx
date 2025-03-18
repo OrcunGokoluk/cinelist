@@ -11,6 +11,9 @@ function MainLayout() {
             </header>
         </div>
         <Outlet/>
+        <footer>
+            <p>&copy; 2025 Orçun Gökoluk.</p>
+        </footer>
 
     </>
   )

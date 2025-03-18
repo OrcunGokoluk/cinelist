@@ -85,7 +85,7 @@ header{
     position: relative;
     display: inline-block;
     width: 100%;
-    height: 75rem;
+    height: 100vh;
   }
   /*
   .image-filter-container::after {
@@ -172,6 +172,11 @@ header{
 .search-form label{
     font-size: 2.5rem;
 }
+.placeholder-container
+{
+    width: 100%;
+    height: 41.2vh;
+}
 @media (min-width:786px){
     .search-form{
         flex-direction: row;
@@ -227,5 +232,10 @@ header{
     }
     .release-date{
         margin-right: 0;
+    }
+    .placeholder-container
+    {
+        width: 100%;
+        height: 41.2vh;
     }
 }

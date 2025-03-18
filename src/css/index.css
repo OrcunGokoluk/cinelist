@@ -39,3 +39,20 @@ small{
 .no-thickness{
     font-weight: 100 important!;
 }
+footer{
+    bottom: 0;
+    width:100%;
+    font-size:1.8rem;
+    text-align: center;
+    background-color:#051923;
+    margin-top: 0;
+    padding: 1rem 0;
+    color:#006d9f;
+}
+
+@media (max-width:786px){
+    footer{
+        display: none;
+    }
+
+    }
