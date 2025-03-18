@@ -33,8 +33,17 @@
 .poster-card{
     display: flex;
     flex-direction: column;
-    width: 30rem;
+    width: 30%;
     margin-bottom: 1rem;
+}
+.movie-card-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:2rem;
+    align-content: center;
+    width: 100%;
+    margin-top: 5rem;
+    
 }
 @media (min-width:786px){
     .search-form{

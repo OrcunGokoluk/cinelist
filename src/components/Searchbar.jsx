@@ -33,11 +33,12 @@ const [moviedata, setData] = React.useState([])
             <input type="text" name="query" placeholder='What do you want to watch?' />
             <button type="submit">Search</button>
         </form>
-
-        {
-         moviedata ? moviedata.map(data=><MovieCard image={"https://image.tmdb.org/t/p/w500/"+ data.poster_path}
+    <article className='movie-card-container'>
+    {
+         moviedata ? moviedata.map(data=><MovieCard image={data.poster_path}
          overview={data.overview} title={data.title}/>):""    
         }
+    </article>
       
     </>
   )
