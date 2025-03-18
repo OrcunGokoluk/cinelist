@@ -6,11 +6,11 @@ const [moviedata, setData] = React.useState([])
 
  async function searchMovies(formData) {
 
-  const movieName = formData.get("query")
+  const movieName = formData.get("query").trim()
   const apiKey = import.meta.env.VITE_API_KEY;
   console.log(apiKey)
 
-  const url = `https://api.themoviedb.org/3/search/movie?api_key=${apiKey}&language=en-US&query=${movieName}&page=1&include_adult=false`
+  const url = `https://api.themoviedb.org/3/search/movie?api_key=${apiKey}&language=en-US&query=${movieName}&page=1&include_adult=true`
 
   try{
     const res = await fetch(url)
@@ -36,7 +36,8 @@ const [moviedata, setData] = React.useState([])
     <article className='movie-card-container'>
     {
          moviedata ? moviedata.map(data=><MovieCard image={data.poster_path}
-         overview={data.overview} title={data.title}/>):""    
+         overview={data.overview} title={data.title} imdb={data.
+          vote_average}/>):""    
         }
     </article>
       

@@ -4,7 +4,9 @@ import Searchbar from '../components/Searchbar'
 function MainLayout() {
   return (
     <>
-      <Searchbar/>
+        <div className='container'>
+            <h1 className='title'>CineList</h1>
+        </div>
     </>
   )
 }

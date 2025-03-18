@@ -30,11 +30,32 @@
     background-color: rgba(0,0,0,0.85);
 }
 
-.poster-card{
+.movie-card{
+    text-decoration: none;
     display: flex;
     flex-direction: column;
     width: 30%;
+    border-radius: 2rem;
     margin-bottom: 1rem;
+    background-color: #d3c0cd;
+    padding: 1rem;
+}
+
+.movie-card:hover{
+    padding: 0;
+}
+.movie-card img{
+    border-radius: 2rem;
+}
+
+.movie-card img:hover{
+    border-radius: 2rem 2rem 0 0;
+}
+
+.movie-card .description{
+    padding: 3rem;
+    padding-top: 1rem;
+    color: #3d3a4b;
 }
 .movie-card-container{
     display: flex;
