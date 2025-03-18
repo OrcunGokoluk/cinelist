@@ -70,26 +70,88 @@
     margin: 0 auto;
     
 }
-.movie-general-info{
+
+.image-filter-container {
+    position: relative;
+    display: inline-block;
     width: 100%;
-    height: 90rem;
-    background-color: #d3c0cd;
-}
-.movie-backdrop-image{
-    width: 5%;
-}
+  }
+  
+  .image-filter-container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(43, 24, 42, 0.685); /* Siyah transparan katman */
+  }
 .page-buttons{
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
     gap:2rem
 }
 .page-buttons button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: 3rem;
-    margin-bottom: 2rem;
+    height: 4rem;
+    width: 15rem;
     padding: .5rem 4rem;
     border-radius: 2rem;
+}
+.page-buttons p{
+    font-size: 3rem;
+}
+.movie-detail-info{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top:0;
+    color: white;
+    font-size: 10rem;
+    width: 100%;
+    margin-top: 2rem;
+}
+.movie-backdrop-image{
+    width: 100%;
+    height: auto;
+}
+.movie-general-info{
+    position: relative;
+    width: 100%;
+    background-color: #d3c0cd;
+}
+.movie-detail-poster-image-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 35%;
+
+}
+.movie-detail-poster-image{
+    margin-top: 5rem;
+    width: 70%;
+}
+.movie-detail-title{
+    font-size: 4.5rem;
+    font-weight: 600;
+}
+.movie-detail-title-container{
+    display: flex;
+}
+.movie-detail-title-container p:nth-child(2){
+    font-size: 4.5rem;
+    font-weight: 200;
+}
+.movie-detail-overview p {
+    font-size: 2.5rem;
 }
 @media (min-width:786px){
     .search-form{
@@ -109,3 +171,16 @@
     }
 }
 
+@media (max-width:786px){
+    .movie-detail-poster-image-container{
+        width: 100%;
+    }
+    .movie-detail-info{
+        display: flex;
+        flex-direction: column;
+        top:0;
+    }
+    .movie-detail-body-container{
+        margin: 0 6rem;
+    }
+}

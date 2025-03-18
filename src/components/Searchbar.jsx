@@ -29,7 +29,7 @@ const apiKey = import.meta.env.VITE_API_KEY;
  React.useEffect(()=>{
 if(movieName){
   console.log(pageNumber)
-  const url = `https://api.themoviedb.org/3/search/movie?api_key=${apiKey}&language=en-US&query=${movieName}&page=${pageNumber}&include_adult=true`
+  const url = `https://api.themoviedb.org/3/search/movie?api_key=${apiKey}&language=en-US&query=${movieName}&page=${pageNumber}&include_adult=false`
 
   fetch(url)
   .then(res=>res.json())

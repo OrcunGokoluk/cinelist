@@ -31,3 +31,6 @@ small{
     font-weight: 600;
     text-align: center;
 }
+.no-thickness{
+    font-weight: 100 important!;
+}
