@@ -20,11 +20,8 @@ small{
     font-size: 1.2rem;
 }
 
-.container{
-    margin: 0 auto;
-    max-width: 1000px;
-    padding:4rem;
-}
+
+
 .title{
     font-size:4.4rem;
     text-align: center;

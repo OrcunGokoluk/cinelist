@@ -1,9 +1,7 @@
 import React from 'react'
 import { Link } from "react-router-dom"
 
-function MovieCard( {image, overview, title, imdb}) {
-
-    console.log(image)
+function MovieCard( {image, overview, title, id , imdb}) {
 
     function roundNumber(number, decimals) {
         const factor = Math.pow(10, decimals);
@@ -11,7 +9,7 @@ function MovieCard( {image, overview, title, imdb}) {
       }
   return (
     <>
-    <Link className='movie-card'>
+    <Link to={`movie/${id}`} className='movie-card'>
             <img className='poster-image' src={ image ?"https://image.tmdb.org/t/p/w500/"+ `${image}`: "../../public/placeholder.jpg"}/>
 
             <section className='description'>
