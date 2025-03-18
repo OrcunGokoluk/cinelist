@@ -28,3 +28,8 @@ small{
     font-size:4.4rem;
     text-align: center;
 }
+.secondary-title{
+    font-size:2rem;
+    font-weight: 600;
+    text-align: center;
+}

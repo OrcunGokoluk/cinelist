@@ -1,7 +1,9 @@
+
+
 .search-form{
     display:flex;
     flex-direction: column;
-    gap: 0.4rem;
+    gap: 0.5rem;
 }
 .search-form label{
     font-size: 1.3rem;
@@ -12,7 +14,6 @@
     line-height: 2.8rem;
     border-radius: 20px;
     border: 1px solid #ddd;
-    margin-bottom: 1rem;
 }
 
 .search-form button{
@@ -28,3 +29,28 @@
 .search-form button:hover {
     background-color: rgba(0,0,0,0.85);
 }
+
+.poster-card{
+    display: flex;
+    flex-direction: column;
+    width: 30rem;
+    margin-bottom: 1rem;
+}
+@media (min-width:786px){
+    .search-form{
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .search-form label{
+        font-size: 1.5rem;
+    }
+    .search-form input{
+        min-width: 45rem;
+    }
+    .search-form button{
+        padding:1rem 3rem
+    }
+}
+
