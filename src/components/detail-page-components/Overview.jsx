@@ -17,7 +17,7 @@ function Overview() {
             </div>
         }
         {
-            movie.overview?.length<300 ?
+            movie.overview?.length<450 ?
             <div className='overview-placeholder'>
 
             </div>:""
