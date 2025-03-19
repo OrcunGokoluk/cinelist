@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from "react-router-dom"
 
-function MovieCard( {image, overview, title, id , imdb}) {
+function MovieCard( {image, title, id , imdb}) {
 
     function roundNumber(number, decimals) {
         const factor = Math.pow(10, decimals);

@@ -20,12 +20,12 @@ small{
 }
 
 
-
 .container{
     font-size:1.8rem;
     text-align: center;
     background-color:#051923;
     margin-top: 0;
+    margin-bottom: 0;
     padding: 1rem 0;
     color:#006d9f;
 }

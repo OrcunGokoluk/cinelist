@@ -5,11 +5,9 @@ import { Outlet } from 'react-router-dom'
 function MainLayout() {
   return (
     <>
-        <div className='container'>
-            <header>
-                <h1 className='title'>CineList</h1>
-            </header>
-        </div>
+        <header className='container'>
+            <h1 className='title'>CineList</h1>
+        </header>
         <Outlet/>
         <footer>
             <p>&copy; 2025 Orçun Gökoluk.</p>
