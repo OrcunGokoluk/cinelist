@@ -50,9 +50,3 @@ footer{
     color:#006d9f;
 }
 
-@media (max-width:786px){
-    footer{
-        display: none;
-    }
-
-    }

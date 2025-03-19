@@ -51,17 +51,8 @@ console.log(styles.backgroundImage)
                 <Outlet context={ movie } />
 
             </section>
-
         </section>
-
-
-
        </div>
-
-
-
-
-
     </article>
 
     </>
