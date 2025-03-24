@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom';
-import { Outlet } from 'react-router-dom';
+import { Outlet, NavLink } from 'react-router-dom';
 
 function MovieDetail() {
 const params = useParams()
@@ -19,10 +19,13 @@ const[movie, setMovie] = useState({})
     },[])
 
     const styles = {
-        backgroundImage:  ` linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(${movie.backdrop_path
+        backgroundImage:  `linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(${movie.backdrop_path
             ?"https://image.tmdb.org/t/p/w500/"+ `${movie.backdrop_path}`:"../../public/placeholder.jpg"})`,
+        backgroundColor: "rgba(0, 0, 0, 0.63)",
+        backgroundBlendMode: "multiply",
         backgroundSize: "cover",
         backgroundPosition: "center",
+
 
     }
 console.log(styles.backgroundImage)
@@ -46,7 +49,11 @@ console.log(styles.backgroundImage)
                         :""
                     }
                 </div>
-                <p className='tagline'>{movie.tagline}</p>
+
+                <nav className='movie-detail-nav'>
+                    <NavLink className={({isActive})=>isActive?"active-detail-nav":""} to="." end>Overview</NavLink>
+                    <NavLink className={({isActive})=>isActive?"active-detail-nav":""} to="actors">Actors</NavLink>
+                </nav>
 
                 <Outlet context={ movie } />
 

@@ -8,6 +8,8 @@ function Overview() {
 
   return (
     <>
+        <p className='tagline'>{movie.tagline}</p>
+        
         <div className='movie-detail-overview'>
         {
             movie.overview ?

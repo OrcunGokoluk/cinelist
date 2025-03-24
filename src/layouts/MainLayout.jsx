@@ -6,7 +6,7 @@ function MainLayout() {
   return (
     <>
         <header className='container'>
-            <h1 className='title'>CineList</h1>
+            <h1 className='title'>Cine-List</h1>
         </header>
         <Outlet/>
         <footer>

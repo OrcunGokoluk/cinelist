@@ -93,7 +93,7 @@ header{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap:2rem
+    gap:2rem;
 }
 .page-buttons button{
     display: flex;
@@ -155,7 +155,6 @@ header{
     font-size: 2rem;
 }
 .image-filter-container{
-    filter: sepia(1) hue-rotate(180deg) saturate(2) ; /* Mavi renk tonu verir */
     z-index: 0;
 }
 .movie-detail-poster-image{
@@ -180,6 +179,41 @@ header{
     width: 20rem;
     height: 15rem;
 }
+.movie-detail-nav a{
+    border-radius: .5rem;
+    font-size: 2rem;
+    background-color: #114f6f;
+    padding: 1rem;
+    color:white;
+    text-decoration: none;
+    margin-right: 2rem;
+}
+.active-detail-nav{
+    background-color: #0a3449 !important;
+}
+
+.actor-image{
+    width: 9rem;
+}
+
+.actor-container{
+    margin-top: 6rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap:6rem;
+}
+.actor{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 9rem;
+}
+.actor-placeholder{
+    width: 9rem ;
+    height: 13.5rem;
+}
+
 @media (min-width:786px){
     .search-form{
         flex-direction: row;
