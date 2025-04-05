@@ -153,6 +153,7 @@ header{
     height: 41.2vh;
 }
 .tagline{
+    margin-bottom: 2rem;
     font-size: 2rem;
 }
 .image-filter-container{
