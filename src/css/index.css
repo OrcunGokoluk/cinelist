@@ -26,7 +26,7 @@ small{
     background-color:#051923;
     margin-top: 0;
     margin-bottom: 0;
-    padding: 1rem 0;
+    padding: 3rem 0;
     color:#006d9f;
 }
 .secondary-title{
@@ -40,13 +40,11 @@ small{
     font-weight: 100 important!;
 }
 footer{
-    bottom: 0;
     width:100%;
     font-size:1.8rem;
     text-align: center;
     background-color:#051923;
-    margin-top: 0;
-    padding: 1rem 0;
-    color:#006d9f;
+    padding: 3.02rem 0;
+    color:#0085c2;
 }
 

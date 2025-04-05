@@ -115,6 +115,7 @@ header{
     color: white;
     font-size: 10rem;
     width: 100%;
+    padding:9rem;
     
 }
 .movie-backdrop-image{
@@ -161,7 +162,7 @@ header{
     position: absolute;
     width: 20%;
     left: 10rem;
-    top:5rem;
+    top:9rem;
     z-index: 2;
     margin-top: 0;
 }
@@ -172,12 +173,14 @@ header{
     align-items: center;
     justify-content: center;
     min-width: 35%;
-
 }
 .overview-placeholder
 {
     width: 20rem;
-    height: 15rem;
+    height: 4rem;
+}
+.movie-detail-nav{
+    margin-bottom:2.5rem ;
 }
 .movie-detail-nav a{
     border-radius: .5rem;
@@ -236,6 +239,7 @@ header{
     .movie-detail-body-container{
         margin: 0 6rem;
     }
+    
     .movie-detail-overview p {
         font-size: 2.5rem;
         padding: 0 3rem  3rem;
@@ -276,7 +280,6 @@ header{
     }
     .movie-detail-poster-image-container{
         height: 100vh;
-    
     }
     .movie-detail-poster-image{
         width: 40rem;
