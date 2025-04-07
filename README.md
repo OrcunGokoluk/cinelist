@@ -43,8 +43,8 @@ cd cinelist
 
 3. Install the dependencies:
 
-```bash
-npm install
+```md
+VITE_API_KEY=your_tmdb_api_key_here
 ```
 
 4. Create a .env file in the root directory and define your TMDb API key as shown below:
