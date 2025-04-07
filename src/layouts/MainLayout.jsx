@@ -1,12 +1,12 @@
 import React from 'react'
 import Searchbar from '../components/Searchbar'
-import { Outlet } from 'react-router-dom'
+import { Outlet,Link } from 'react-router-dom'
 
 function MainLayout() {
   return (
     <>
-        <header className='container'>
-            <h1 className='title'>Cine-List</h1>
+        <header>
+            <Link to="/"><h1 className='title'>Cine-List</h1></Link>
         </header>
         <Outlet/>
         <footer>

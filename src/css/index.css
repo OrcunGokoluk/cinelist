@@ -20,13 +20,20 @@ small{
 }
 
 
-.container{
+header{
     font-size:1.8rem;
     text-align: center;
     background-color:#051923;
     margin-top: 0;
     margin-bottom: 0;
     padding: 3rem 0;
+    color:#006d9f;
+}
+header a {
+    text-decoration:none;
+}
+header a:visited{
+    text-decoration:none;
     color:#006d9f;
 }
 .secondary-title{
