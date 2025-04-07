@@ -20,7 +20,7 @@ const[movie, setMovie] = useState({})
 
     const styles = {
         backgroundImage:  `linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(${movie.backdrop_path
-            ?"https://image.tmdb.org/t/p/w500/"+ `${movie.backdrop_path}`:"../../public/placeholder.jpg"})`,
+            ?"https://image.tmdb.org/t/p/w500/"+ `${movie.backdrop_path}`:"../../images/placeholder.jpg"})`,
         backgroundColor: "rgba(0, 0, 0, 0.63)",
         backgroundBlendMode: "multiply",
         backgroundSize: "cover",
