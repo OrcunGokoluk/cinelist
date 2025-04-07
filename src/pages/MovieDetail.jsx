@@ -34,7 +34,7 @@ console.log(styles.backgroundImage)
     <>
     <article className='movie-general-info'>
     <img style={{filter: "none"}} className='movie-detail-poster-image' src={ movie.poster_path
-                ?"https://image.tmdb.org/t/p/w500/"+ `${movie.poster_path}`:"../../public/placeholder.jpg"} />
+                ?"https://image.tmdb.org/t/p/w500/"+ `${movie.poster_path}`:"../../placeholder.jpg"} />
        <div className='image-filter-container' style={styles}>
 
        <section className='movie-detail-info'>
