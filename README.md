@@ -27,7 +27,7 @@ Throughout this project, I focused on mastering essential React and frontend dev
 - Built a consistent layout structure across pages.
 - Used dotenv to securely manage the API key.
 
-### Installation
+## Installation
 
 1. Clone the repository:
 
