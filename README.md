@@ -35,19 +35,19 @@ Throughout this project, I focused on mastering essential React and frontend dev
 git clone https://github.com/OrcunGokoluk/cinelist.git
 ```
 
-2.Navigate to the project directory:
+2. Navigate to the project directory:
 
 ```bash
 cd cinelist
 ```
 
-3.Install the dependencies:
+3. Install the dependencies:
 
 ```bash
 npm install
 ```
 
-4.Create a .env file in the root directory and define your TMDb API key as shown below:
+4. Create a .env file in the root directory and define your TMDb API key as shown below:
 
 ```bash
 cd cinelist
