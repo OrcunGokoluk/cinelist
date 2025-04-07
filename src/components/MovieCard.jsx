@@ -10,7 +10,7 @@ function MovieCard( {image, title, id , imdb}) {
   return (
     <>
     <Link to={`movie/${id}`} className='movie-card'>
-            <img className='poster-image' src={ image ?"https://image.tmdb.org/t/p/w500/"+ `${image}`: "../../public/placeholder.jpg"}/>
+            <img className='poster-image' src={ image ?"https://image.tmdb.org/t/p/w500/"+ `${image}`: "../../public/images/placeholder.jpg"}/>
 
             <section className='description'>
                 <p className='secondary-title'>{title}</p>
