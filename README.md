@@ -17,7 +17,7 @@ CineList is a user-friendly web application that allows users to discover and br
 
 Throughout this project, I focused on mastering essential React and frontend development concepts:
 
-- Implemented dynamic URL structures and pagination using React Router.
+- Implemented dynamic URL structures using React Router.
 - Built dynamic and flexible navigation with nested routes.
 - Used Outlet Context to share data between nested route children.
 - Applied conditional rendering to manage dynamic UI content.
