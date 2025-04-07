@@ -31,7 +31,7 @@ function Actors() {
         actors ? actors.map((actor, index)=>(
             <div className='actor'>
                 {
-                     actor.profile_path ? <img className='actor-image' key={index} src={`${"https://image.tmdb.org/t/p/w500"+ actor.profile_path}`}/> : <img key={index} className="actor-placeholder" src="../../../public/images/actorplaceholder.jpg"/>
+                     actor.profile_path ? <img className='actor-image' key={index} src={`${"https://image.tmdb.org/t/p/w500"+ actor.profile_path}`}/> : <img key={index} className="actor-placeholder" src="../../../images/actorplaceholder.jpg"/>
                 }
                 
             <p key={index}>{actor.name}</p>
